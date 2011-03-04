@@ -34,14 +34,14 @@ urxvt*boldFont: xft:Terminus:pixelsize=11:antialias=false:bold
 *color3: #CAAF2B
 *color11: #FFE080
 !blue
-*color4: #7FB8D8
+*color4: #3B5F8F
 *color12: #B8DDEA
 !magenta
 *color5: #956D9D
 *color13: #C18FCB
 !cyan
 *color6: #4c8ea1
-*color14: #6bc1d0
+*color14: #296B77
 !white
 *color7: #808080
 *color15: #cdcdcd
