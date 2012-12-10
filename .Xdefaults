@@ -1,15 +1,17 @@
-URxvt.urlLauncher:      /usr/bin/chromium
-URxvt.matcher.button:   1
-URxvt.depth: 32
-URxvt.saveLines: 200000
-URxvt.scrollBar: false
+urxvt*urlLauncher:      /usr/bin/chromium
+urxvt*matcher.button:   1
+urxvt*depth: 32
+urxvt*saveLines: 200000
+urxvt*transparent: true
+urxvt*shading: 10
+URxvt.perl-ext-common: default,matcher
 
 urxvt*termName:  rxvt-256color
 urxvt*scrollBar:         false
 urxvt*secondaryScroll:    true
 urxvt*cursorBlink:       true
 !urxvt*cursorUnderline:   true
-!urxvt*urgentOnBell:       true
+urxvt*urgentOnBell:       true
 !!urxvt*override-redirect:false
 !!urxvt*borderLess:       false
 !!urxvt*internalBorder:       0
@@ -40,11 +42,11 @@ urxvt*boldFont: xft:Terminus:pixelsize=11:antialias=false:bold
 *color5: #956D9D
 *color13: #C18FCB
 !cyan
-*color6: #4c8ea1
-*color14: #296B77
+*color14: #4c8ea1
+*color6: #296B77
 !white
-*color7: #808080
-*color15: #cdcdcd
+*color7: #a1a1a1
+*color15: #ffffff
 
 *borderColor: #343434
 *background: #303030
