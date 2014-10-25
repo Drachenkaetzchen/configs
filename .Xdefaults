@@ -1,31 +1,42 @@
-urxvt*urlLauncher:      /usr/bin/chromium
-urxvt*matcher.button:   1
-urxvt*depth: 32
-urxvt*saveLines: 200000
-urxvt*transparent: true
-urxvt*shading: 10
-URxvt.perl-ext-common: default,matcher
+URxvt.urlLauncher:      /usr/bin/chromium
+URxvt.matcher.button:   1
+URxvt.depth: 32
+URxvt.saveLines: 200000
+URxvt.scrollBar: false
+URxvt.transparent: true
+URxvt.shading: 10
 
-urxvt*termName:  rxvt-256color
-urxvt*scrollBar:         false
-urxvt*secondaryScroll:    true
-urxvt*cursorBlink:       true
-!urxvt*cursorUnderline:   true
-urxvt*urgentOnBell:       true
-!!urxvt*override-redirect:false
-!!urxvt*borderLess:       false
-!!urxvt*internalBorder:       0
-!!urxvt*externalBorder:       0
+URxvt*scrollBar:         false
+URxvt*secondaryScroll:    true
+URxvt*cursorBlink:       true
+!URxvt*cursorUnderline:   true
+!URxvt*urgentOnBell:       true
+!!URxvt*override-redirect:false
+!!URxvt*borderLess:       false
+!!URxvt*internalBorder:       0
+!!URxvt*externalBorder:       0
 
-urxvt*font:     xft:Terminus:pixelsize=11:antialias=false
-urxvt*boldFont: xft:Terminus:pixelsize=11:antialias=false:bold
+URxvt*fonts.0:     xft:Terminus:pixelsize=11:antialias=false
+URxvt*fonts.1:     xft:Terminus:pixelsize=16:antialias=false
+URxvt*fonts.2:     xft:Terminus:pixelsize=20:antialias=false
+URxvt*fonts.3:     xft:Terminus:pixelsize=25:antialias=false
+
+!URxvt*boldFont:     xft:Terminus:bold:pixelsize=11:antialias=false
+
+URxvt.keysym.Mod4-plus: perl:fonts:plus
+URxvt.keysym.Mod4-minus: perl:fonts:minus
+
+URxvt.perl-ext: fonts
+URxvt.perl-lib: /home/felicitus/.urxvt/
+
+
+URxvt.internalBorder: 1
 
 ! jwr low contrast
 
 !black
 *color0: #222222
 *color8: #454545
-
 !red
 *color1: #9E5641
 *color9: #CC896D
@@ -42,41 +53,41 @@ urxvt*boldFont: xft:Terminus:pixelsize=11:antialias=false:bold
 *color5: #956D9D
 *color13: #C18FCB
 !cyan
-*color14: #4c8ea1
-*color6: #296B77
+*color6: #4c8ea1
+*color14: #296B77
 !white
-*color7: #a1a1a1
-*color15: #ffffff
+*color7: #808080
+*color15: #cdcdcd
 
-*borderColor: #343434
-*background: #303030
-*foreground: #cdcdcd
+URxvt*borderColor: #343434
+URxvt*background: #303030
+URxvt*foreground: #cdcdcd
 !Cursor
-urxvt*cursorColor: #DCDCCC
+URxvt*cursorColor: #DCDCCC
 
-!urxvt*background:  #3f3f3f
-!urxvt*foreground:  #dcdccc
+!URxvt*background:  #3f3f3f
+!URxvt*foreground:  #dcdccc
 ! black + red
-!urxvt*color0:      #1E2320
-!urxvt*color1:      #705050
+!URxvt*color0:      #1E2320
+!URxvt*color1:      #705050
 ! green + yellow
-!urxvt*color2:      #60b48a
-!urxvt*color3:      #dfaf8f
+!URxvt*color2:      #60b48a
+!URxvt*color3:      #dfaf8f
 ! blue + purple
-!urxvt*color4:      #506070
-!urxvt*color5:      #dc8cc3
+!URxvt*color4:      #506070
+!URxvt*color5:      #dc8cc3
 ! cyan + white
-!urxvt*color6:      #8cd0d3
-!urxvt*color7:      #dcdccc
+!URxvt*color6:      #8cd0d3
+!URxvt*color7:      #dcdccc
 ! bright-black + bright-red
-!urxvt*color8:      #709080
-!urxvt*color9:      #dca3a3
+!URxvt*color8:      #709080
+!URxvt*color9:      #dca3a3
 ! bright-green + bright-yellow
-!urxvt*color10:     #c3bf9f
-!urxvt*color11:     #f0dfaf
+!URxvt*color10:     #c3bf9f
+!URxvt*color11:     #f0dfaf
 ! bright-blue + bright-purple
-!urxvt*color12:     #94bff3
-!urxvt*color13:     #ec93d3
+!URxvt*color12:     #94bff3
+!URxvt*color13:     #ec93d3
 ! bright-cyan + bright-white
-!urxvt*color14:     #93e0e3
-!urxvt*color15:     #ffffff
+!URxvt*color14:     #93e0e3
+!URxvt*color15:     #ffffff
