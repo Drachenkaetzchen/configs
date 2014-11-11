@@ -56,8 +56,8 @@ URxvt.internalBorder: 1
 *color6: #4c8ea1
 *color14: #296B77
 !white
-*color7: #808080
-*color15: #cdcdcd
+*color7: #c2c2c2
+*color15: #dddddd
 
 URxvt*borderColor: #343434
 URxvt*background: #303030
@@ -72,13 +72,13 @@ URxvt*cursorColor: #DCDCCC
 !URxvt*color1:      #705050
 ! green + yellow
 !URxvt*color2:      #60b48a
-!URxvt*color3:      #dfaf8f
+!URxvt*color3:      #df5e5e
 ! blue + purple
 !URxvt*color4:      #506070
 !URxvt*color5:      #dc8cc3
 ! cyan + white
 !URxvt*color6:      #8cd0d3
-!URxvt*color7:      #dcdccc
+!URxvt*color7:      #ececec
 ! bright-black + bright-red
 !URxvt*color8:      #709080
 !URxvt*color9:      #dca3a3
