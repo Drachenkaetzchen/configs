@@ -41,6 +41,19 @@
 
 "xscreensaver-command -lock"
 	XF86Launch1
+
+"/home/felicitus/bin/enable_autolock.sh"
+	Shift+XF86AudioRaiseVolume
+
+"/home/felicitus/bin/disable_autolock.sh"
+	Shift+XF86AudioLowerVolume
+
+"/usr/bin/amixer -c 0 set Master 1+"
+	XF86AudioRaiseVolume
+
+"/usr/bin/amixer -c 0 set Master 1-"
+        XF86AudioLowerVolume
+
 #"xterm -geom 50x20+20+20"
 #   Shift+Mod2+alt + s
 #
