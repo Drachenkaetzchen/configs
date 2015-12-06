@@ -1,42 +1,46 @@
 #!/bin/bash
-# xmodmap einlesen
 HOST=`uname -n`
-export DE="generic"
-export PATH=$PATH:~/local/eclipse:~/bin:~/local/ZendStudio
-export GDK_NATIVE_WINDOWS=true
+export DE="gnome"
+export PATH=$PATH:~/local/eclipse:~/bin:~/local/netbeans/bin:~/local/phpstorm/bin/
+export MAILER="thunderbird"
+export BROWSER="chromium"
+export WEBIDE_VM_OPTIONS="/home/felicitus/local/phpstorm64.vmoptions"
 
 XMODMAP="${HOME}/.Xmodmap-$HOST"
 I3STATUS="${HOME}/bin/i3status-$HOST.sh"
 XRANDR="${HOME}/bin/xrandr-$HOST.sh"
 
+echo "Executing xrandr $XRANDR"
 $XRANDR
-i3 -V > ~/.i3/log & i3pid=$!
 
-autocutsel -fork
-urxvtd -q -o -f
-
+gsettings set org.gnome.desktop.interface text-scaling-factor 
+xrandr --dpi 96x96
+echo "Setting a solid background"
 xsetroot -solid "#333333"
 
-ssh-add ~/.ssh/id_dsa &
-ssh-add ~/.ssh/id_rsa &
+if [[ "$HOST" == "feli-t420s-linux" ]]; then
+	echo "Disabling touchpad on $HOST"
+	disable-touchpad.sh
+fi
 
-disable-touchpad.sh
-
-xscreensaver &
 xbindkeys
 
-/usr/libexec/gnome-settings-daemon &
-
-sleep 2
+xset dpms force on
+xset s off
 
 if [[ -f ${XMODMAP} ]]; then
 	xmodmap $XMODMAP -v
 fi
 
-# i3status starten
-bash ${I3STATUS}
+xsetroot -cursor_name left_ptr
 
-chromium &
-thunderbird &
+gnome-settings-daemon &
 
-wait $i3pid
+xinput --set-prop "Razer Razer Diamondback 3G" "Device Accel Velocity Scaling" 1.2
+xinput --set-prop "Razer Razer Diamondback 3G" "Device Accel Velocity Scaling" 2
+
+xrdb ~/.Xdefaults
+xset +fp /home/felicitus/.fonts
+
+exec i3 -V > ~/.i3/log
+
