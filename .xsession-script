@@ -1,7 +1,7 @@
 #!/bin/bash
 HOST=`uname -n`
 export DE="gnome"
-export PATH=$PATH:~/local/eclipse:~/bin:~/local/netbeans/bin:~/local/phpstorm/bin/
+export PATH=$PATH:~/local/eclipse:~/bin:~/local/netbeans/bin:~/local/phpstorm/bin/:~/repos/configs/bin
 export MAILER="thunderbird"
 export BROWSER="chromium"
 export WEBIDE_VM_OPTIONS="/home/felicitus/local/phpstorm64.vmoptions"
