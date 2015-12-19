@@ -9,19 +9,17 @@ export WEBIDE_VM_OPTIONS="/home/felicitus/local/phpstorm64.vmoptions"
 XMODMAP="${HOME}/.Xmodmap-$HOST"
 I3STATUS="${HOME}/bin/i3status-$HOST.sh"
 XRANDR="${HOME}/bin/xrandr-$HOST.sh"
+INIT="${HOME}/repos/configs/bin/init-$HOST.sh"
+
+$INIT
 
 echo "Executing xrandr $XRANDR"
 $XRANDR
 
-gsettings set org.gnome.desktop.interface text-scaling-factor 
-xrandr --dpi 96x96
+gsettings set org.gnome.desktop.interface text-scaling-factor 1
+xrandr --dpi 75x75
 echo "Setting a solid background"
 xsetroot -solid "#333333"
-
-if [[ "$HOST" == "feli-t420s-linux" ]]; then
-	echo "Disabling touchpad on $HOST"
-	disable-touchpad.sh
-fi
 
 xbindkeys
 
