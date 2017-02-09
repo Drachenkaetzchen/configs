@@ -8,20 +8,22 @@ export ZSH=/home/felicitus/.oh-my-zsh
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 POWERLEVEL9K_MODE='awesome-patched'
-
-POWERLEVEL9K_RAM_BACKGROUND="black"
-POWERLEVEL9K_RAM_FOREGROUND="249"
+POWERLEVEL9K_CONTEXT_TEMPLATE="%n@`hostname -f`"
+POWERLEVEL9K_RAM_BACKGROUND="250"
+POWERLEVEL9K_RAM_FOREGROUND="black"
 POWERLEVEL9K_RAM_ELEMENTS=(ram_free)
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history ram time symfony2_version symfony2_tests)
 
+POWERLEVEL9K_DIR_HOME_BACKGROUND="129"
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND="129"
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
-POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND="green"
+POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND="135"
 POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND="black"
 
 POWERLEVEL9K_VCS_GIT_ICON='\uf113 '
-POWERLEVEL9K_OS_ICON_BACKGROUND="mag"
+POWERLEVEL9K_OS_ICON_BACKGROUND="141"
 POWERLEVEL9K_OS_ICON_FOREGROUND="black"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -119,3 +121,4 @@ bindkey ';5C' forward-word
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export PATH="/home/felicitus/bin/Sencha/Cmd:$PATH"
