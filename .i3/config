@@ -12,8 +12,7 @@
 set $mod Mod4
 
 # font for window titles. ISO 10646 = Unicode
-#font -misc-fixed-medium-r-normal--10-120-75-75-C-70-iso10646-1
-font -*-terminesspowerline-*-*-*-*-12-*-*-*-*-*-*-*
+font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 
 #font pango:SauceCodePro Nerd Font 11px
 
@@ -170,6 +169,7 @@ bar {
 	separator_symbol " "
 	#status_command i3blocks -c ~/.i3/i3blocks.conf
 	#tray_output primary
+	tray_output primary
 	colors {
 	statusline #d597e7
 	background #2d1035
@@ -181,14 +181,15 @@ bar {
         }
 }
 
-#for_window [title="(?i)^((?!phpstorm).)*$" class="jetbrains-phpstorm"] floating enable
+for_window [title="(?i)^((?!phpstorm).)*$" class="jetbrains-phpstorm"] floating enable
 #floating_minimum_size 400 x 200
-floating_maximum_size 1900 x 1000
+#floating_maximum_size 1900 x 1000
 
 exec autocutsel -fork
 exec ssh-add ~/.ssh/id_rsa < /dev/null
 #exec gnome-settings-daemon
 exec feh --bg-fill -z wallpapers/*
 exec owncloud
-exec /usr/bin/redshift
+exec /usr/bin/xset m 25/10 5
+
 focus_follows_mouse yes
