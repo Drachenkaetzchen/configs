@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/felicitus/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -7,7 +7,7 @@ export ZSH=/home/felicitus/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
-POWERLEVEL9K_MODE='awesome-patched'
+POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_CONTEXT_TEMPLATE="%n@`hostname -f`"
 POWERLEVEL9K_RAM_BACKGROUND="250"
 POWERLEVEL9K_RAM_FOREGROUND="black"
@@ -72,7 +72,7 @@ plugins=(git symfony2 sudo composer)
 
 # User configuration
 
-export PATH="/home/felicitus/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
+export PATH="~/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 TERM=xterm-256color
@@ -121,4 +121,3 @@ bindkey ';5C' forward-word
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH="/home/felicitus/bin/Sencha/Cmd:$PATH"
