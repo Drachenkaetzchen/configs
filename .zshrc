@@ -72,7 +72,7 @@ plugins=(git symfony2 sudo composer)
 
 # User configuration
 
-export PATH="~/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
+export PATH="~/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 TERM=xterm-256color
@@ -121,3 +121,7 @@ bindkey ';5C' forward-word
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+if [[ -a /opt/ssh-agent-wsl/ssh-agent-wsl ]]; then
+    eval $(/opt/ssh-agent-wsl/ssh-agent-wsl -r)
+fi
